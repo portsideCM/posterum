@@ -36,11 +36,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-<<<<<<< HEAD
           new FacebookLoginPackage()
-=======
-          new FBSDKPackage(mCallbackManager)
->>>>>>> f0e107efe7e2d6d9bca2fceb95824ffd5765c269
       );
     }
   };

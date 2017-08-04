@@ -43,13 +43,9 @@
           </intent-filter>
       </activity>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-<<<<<<< HEAD
       <meta-data
         android:name="com.facebook.sdk.ApplicationId"
         android:value="@string/fb_app_id"/>
-=======
-      <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
->>>>>>> f0e107efe7e2d6d9bca2fceb95824ffd5765c269
     </application>
 
 </manifest>
