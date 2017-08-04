@@ -39,4 +39,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('Posterum', () => Posterum);
+AppRegistry.registerComponent('posterum', () => Posterum);
