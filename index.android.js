@@ -5,7 +5,7 @@ import {
   Text,
   View
 } from 'react-native';
-import Login from 'login.js';
+import Login from './components/login.js';
 
 export default class Posterum extends Component {
   render() {
@@ -13,8 +13,8 @@ export default class Posterum extends Component {
       <View style={styles.container}>
         <Text style={styles.welcome}>
           Welcome to Posterum
-          <Login />
         </Text>
+        <Login />
       </View>
     );
   }
@@ -39,4 +39,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('Posterum', () => Posterum);
+AppRegistry.registerComponent('posterum', () => Posterum);
