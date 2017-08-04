@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">posterum</string>
+<<<<<<< HEAD
     <string name="fb_app_id">1920276421586001</string>
     <string name="fb_login_protocol_scheme">fb1920276421586001</string>
+=======
+    <string name="facebook_app_id">1920276421586001</string>
+>>>>>>> f0e107efe7e2d6d9bca2fceb95824ffd5765c269
 </resources>

@@ -5,8 +5,12 @@ import {
   Text,
   View
 } from 'react-native';
+<<<<<<< HEAD
 import {FBLogin, FBLoginManager} from 'react-native-facebook-login';
 import FBLoginView from './components/FBLoginView.js';
+=======
+import Login from './components/login.js';
+>>>>>>> f0e107efe7e2d6d9bca2fceb95824ffd5765c269
 
 export default class Posterum extends Component {
   render() {
@@ -15,6 +19,7 @@ export default class Posterum extends Component {
         <Text style={styles.welcome}>
           Welcome to Posterum
         </Text>
+<<<<<<< HEAD
         <FBLogin
             buttonView={<FBLoginView />}
             ref={(fbLogin) => { this.fbLogin = fbLogin }}
@@ -27,6 +32,9 @@ export default class Posterum extends Component {
             onCancel={function(e){console.log(e)}}
             onPermissionsMissing={function(e){console.log(e)}}
           />
+=======
+        <Login />
+>>>>>>> f0e107efe7e2d6d9bca2fceb95824ffd5765c269
       </View>
     );
   }
