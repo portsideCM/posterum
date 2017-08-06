@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import {
   AppRegistry,
-  StyleSheet,
   Text,
   View
 } from 'react-native';
 import {FBLogin, FBLoginManager} from 'react-native-facebook-login';
 import FBLoginView from './components/FBLoginView.js';
+import styles from './components/stylesheets/mainstyles.js';
 
 export default class Posterum extends Component {
     render() {
@@ -20,7 +20,7 @@ export default class Posterum extends Component {
                     ref={(fbLogin) => { this.fbLogin = fbLogin }}
                     loginBehavior={FBLoginManager.LoginBehaviors.Native}
                     permissions={["email","user_friends"]}
-                    onLogin={function(e){console.log(e)}}
+                    onLogin={/*Go to the main page*/}
                     onLoginFound={function(e){console.log(e)}}
                     onLoginNotFound={function(e){console.log(e)}}
                     onLogout={function(e){console.log(e)}}
@@ -31,24 +31,5 @@ export default class Posterum extends Component {
           );
       }
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF',
-    },
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
-    },
-    instructions: {
-        textAlign: 'center',
-        color: '#333333',
-        marginBottom: 5,
-    },
-});
 
 AppRegistry.registerComponent('posterum', () => Posterum);

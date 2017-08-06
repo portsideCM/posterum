@@ -1,6 +1,7 @@
 package com.posterum;
 
 import com.facebook.react.ReactActivity;
+import com.magus.fblogin.FacebookLoginPackage;
 
 public class MainActivity extends ReactActivity {
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, TouchableHighlight } from 'react-native';
+import { Text, View, TouchableHighlight } from 'react-native';
+import mainStyles from './components/stylesheets/mainstyles.js';
 var Icon = require('react-native-vector-icons/FontAwesome');
 
 /**
@@ -33,9 +34,9 @@ export default class FBLoginView extends Component {
                             }
 
                         }}
-                        color={"#000000"}
+                        color={"#ffffff"}
                         backgroundColor={"#3b5998"} name={"facebook"}  size={20} borderRadius={100}>
-                            <Text color={"#000000"}>Login to Facebook</Text>
+                            <Text style={mainStyles.whitetext}>Login to Facebook</Text>
                         </Icon.Button>
                     </View>
                 </TouchableHighlight>
