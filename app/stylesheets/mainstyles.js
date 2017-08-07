@@ -11,17 +11,14 @@ export default StyleSheet.create({
     welcome: {
         fontSize: 20,
         textAlign: 'center',
-        margin: 10,
-        fontFamily: 'Roboto-Regular'
+        margin: 10
     },
     instructions: {
         textAlign: 'center',
         color: '#333333',
-        marginBottom: 5,
-        fontFamily: 'Roboto-Regular'
+        marginBottom: 5
     },
     whitetext: {
-        color: '#ffffff',
-        fontFamily: 'Roboto-Regular'
+        color: '#ffffff'
     }
 });

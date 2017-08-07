@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
 import { Text, View, TouchableHighlight } from 'react-native';
-import mainStyles from './components/stylesheets/mainstyles.js';
+import mainStyles from './stylesheets/mainstyles.js';
 var Icon = require('react-native-vector-icons/FontAwesome');
 
-/**
-  Example FBLoginView class
-  Please note:
-  - this is not meant to be a full example but highlights what you have access to
-  - If you use a touchable component, you will need to set the onPress event like below
-**/
 export default class FBLoginView extends Component {
     static contextTypes = {
         isLoggedIn: React.PropTypes.bool,
@@ -24,7 +18,7 @@ export default class FBLoginView extends Component {
     render(){
         return (
             <View style={[]}>
-                <TouchableHighlight onPress={() => {console.log("Loggin in to facebook.");}}>
+                <TouchableHighlight onPress={() => {console.log("Logging in to facebook.");}}>
                     <View>
                         <Icon.Button onPress={() => {
                             if(!this.context.isLoggedIn){

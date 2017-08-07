@@ -2,34 +2,31 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
   Text,
-  View
+  View,
+  Navigator
 } from 'react-native';
 import {FBLogin, FBLoginManager} from 'react-native-facebook-login';
 import FBLoginView from './components/FBLoginView.js';
 import styles from './components/stylesheets/mainstyles.js';
 
+import Login from './components/routes/login/login.js';
+
 export default class Posterum extends Component {
     render() {
         return (
-            <View style={styles.container}>
-                <Text style={styles.welcome}>
-                    Welcome to Posterum
-                </Text>
-                <FBLogin
-                    buttonView={<FBLoginView />}
-                    ref={(fbLogin) => { this.fbLogin = fbLogin }}
-                    loginBehavior={FBLoginManager.LoginBehaviors.Native}
-                    permissions={["email","user_friends"]}
-                    onLogin={/*Go to the main page*/}
-                    onLoginFound={function(e){console.log(e)}}
-                    onLoginNotFound={function(e){console.log(e)}}
-                    onLogout={function(e){console.log(e)}}
-                    onCancel={function(e){console.log(e)}}
-                    onPermissionsMissing={function(e){console.log(e)}}
-                  />
-              </View>
-          );
-      }
+            <Navigator
+                initialRoute={{id:"login"}}
+                renderScene={this.renderScene}
+            />
+        );
+    }
+
+    renderScene(route, navigator){
+        switch(route.id){
+            case "login":
+                return (<Login/>);
+        }
+    }
 }
 
 AppRegistry.registerComponent('posterum', () => Posterum);
